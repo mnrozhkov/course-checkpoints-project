@@ -14,6 +14,7 @@ stages:
     outs:
       - model.pt:
           checkpoint: true
+          cache: false
     live:
       results:
         summary: true

@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DVC Plot</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.18.2"></script>
+</head>
+<body>
+    <table>
+<thead>
+<tr><th>results.json                                                                                                                                                                    </th></tr>
+</thead>
+<tbody>
+<tr><td>{&#x27;data&#x27;: {&#x27;step&#x27;: 6, &#x27;acc&#x27;: 0.8770491803278688, &#x27;loss&#x27;: 0.27895413479599795, &#x27;training_time&#x27;: 256.6350619792938, &#x27;val_acc&#x27;: 0.8104575163398693, &#x27;val_loss&#x27;: 0.4404953133826162}}</td></tr>
+</tbody>
+</table>
+<br>
+<div id = "plot0"></div>
+<script type = "text/javascript">
+    var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "loss": "1.0782891892995992",
+        "rev": "workspace",
+        "step": "0",
+        "timestamp": "1636724078087"
+    },
+    {
+        "loss": "0.5817074883179586",
+        "rev": "workspace",
+        "step": "1",
+        "timestamp": "1636724134667"
+    },
+    {
+        "loss": "0.9612770412789017",
+        "rev": "workspace",
+        "step": "2",
+        "timestamp": "1636724348395"
+    },
+    {
+        "loss": "0.39532929219183377",
+        "rev": "workspace",
+        "step": "3",
+        "timestamp": "1636724405971"
+    },
+    {
+        "loss": "0.387680036366963",
+        "rev": "workspace",
+        "step": "4",
+        "timestamp": "1636724462241"
+    },
+    {
+        "loss": "0.34502957272725027",
+        "rev": "workspace",
+        "step": "5",
+        "timestamp": "1636724518490"
+    },
+    {
+        "loss": "0.27895413479599795",
+        "rev": "workspace",
+        "step": "6",
+        "timestamp": "1636724574929"
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "step",
+            "type": "quantitative",
+            "title": "step"
+        },
+        "y": {
+            "field": "loss",
+            "type": "quantitative",
+            "title": "loss",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+    vegaEmbed('#plot0', spec);
+</script>
+<div id = "plot1"></div>
+<script type = "text/javascript">
+    var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "rev": "workspace",
+        "step": "0",
+        "timestamp": "1636724078088",
+        "training_time": "29.231925010681152"
+    },
+    {
+        "rev": "workspace",
+        "step": "1",
+        "timestamp": "1636724134668",
+        "training_time": "85.81202721595764"
+    },
+    {
+        "rev": "workspace",
+        "step": "2",
+        "timestamp": "1636724348395",
+        "training_time": "30.097931146621704"
+    },
+    {
+        "rev": "workspace",
+        "step": "3",
+        "timestamp": "1636724405972",
+        "training_time": "87.68025517463684"
+    },
+    {
+        "rev": "workspace",
+        "step": "4",
+        "timestamp": "1636724462241",
+        "training_time": "143.94700527191162"
+    },
+    {
+        "rev": "workspace",
+        "step": "5",
+        "timestamp": "1636724518491",
+        "training_time": "200.19768810272217"
+    },
+    {
+        "rev": "workspace",
+        "step": "6",
+        "timestamp": "1636724574930",
+        "training_time": "256.6350619792938"
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "step",
+            "type": "quantitative",
+            "title": "step"
+        },
+        "y": {
+            "field": "training_time",
+            "type": "quantitative",
+            "title": "training_time",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+    vegaEmbed('#plot1', spec);
+</script>
+<div id = "plot2"></div>
+<script type = "text/javascript">
+    var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "acc": "0.5860655737704918",
+        "rev": "workspace",
+        "step": "0",
+        "timestamp": "1636724078086"
+    },
+    {
+        "acc": "0.6188524590163934",
+        "rev": "workspace",
+        "step": "1",
+        "timestamp": "1636724134666"
+    },
+    {
+        "acc": "0.6434426229508197",
+        "rev": "workspace",
+        "step": "2",
+        "timestamp": "1636724348394"
+    },
+    {
+        "acc": "0.8319672131147541",
+        "rev": "workspace",
+        "step": "3",
+        "timestamp": "1636724405970"
+    },
+    {
+        "acc": "0.8688524590163934",
+        "rev": "workspace",
+        "step": "4",
+        "timestamp": "1636724462240"
+    },
+    {
+        "acc": "0.8442622950819673",
+        "rev": "workspace",
+        "step": "5",
+        "timestamp": "1636724518489"
+    },
+    {
+        "acc": "0.8770491803278688",
+        "rev": "workspace",
+        "step": "6",
+        "timestamp": "1636724574928"
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "step",
+            "type": "quantitative",
+            "title": "step"
+        },
+        "y": {
+            "field": "acc",
+            "type": "quantitative",
+            "title": "acc",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+    vegaEmbed('#plot2', spec);
+</script>
+<div id = "plot3"></div>
+<script type = "text/javascript">
+    var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "rev": "workspace",
+        "step": "0",
+        "timestamp": "1636644858957",
+        "val_loss": "0.558423262016446"
+    },
+    {
+        "rev": "workspace",
+        "step": "0",
+        "timestamp": "1636724103869",
+        "val_loss": "0.6510549994075999"
+    },
+    {
+        "rev": "workspace",
+        "step": "1",
+        "timestamp": "1636724160292",
+        "val_loss": "0.569633266018107"
+    },
+    {
+        "rev": "workspace",
+        "step": "2",
+        "timestamp": "1636724374817",
+        "val_loss": "0.6155996423920774"
+    },
+    {
+        "rev": "workspace",
+        "step": "3",
+        "timestamp": "1636724431930",
+        "val_loss": "0.36802857500665326"
+    },
+    {
+        "rev": "workspace",
+        "step": "4",
+        "timestamp": "1636724488140",
+        "val_loss": "0.3487877394833596"
+    },
+    {
+        "rev": "workspace",
+        "step": "5",
+        "timestamp": "1636724544555",
+        "val_loss": "0.40595260593626237"
+    },
+    {
+        "rev": "workspace",
+        "step": "6",
+        "timestamp": "1636724600832",
+        "val_loss": "0.4404953133826162"
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "step",
+            "type": "quantitative",
+            "title": "step"
+        },
+        "y": {
+            "field": "val_loss",
+            "type": "quantitative",
+            "title": "val_loss",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+    vegaEmbed('#plot3', spec);
+</script>
+<div id = "plot4"></div>
+<script type = "text/javascript">
+    var spec = {
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "data": {
+        "values": [
+    {
+        "rev": "workspace",
+        "step": "0",
+        "timestamp": "1636644858956",
+        "val_acc": "0.7581699346405228"
+    },
+    {
+        "rev": "workspace",
+        "step": "0",
+        "timestamp": "1636724103867",
+        "val_acc": "0.7254901960784313"
+    },
+    {
+        "rev": "workspace",
+        "step": "1",
+        "timestamp": "1636724160290",
+        "val_acc": "0.7058823529411765"
+    },
+    {
+        "rev": "workspace",
+        "step": "2",
+        "timestamp": "1636724374816",
+        "val_acc": "0.7647058823529411"
+    },
+    {
+        "rev": "workspace",
+        "step": "3",
+        "timestamp": "1636724431929",
+        "val_acc": "0.8496732026143791"
+    },
+    {
+        "rev": "workspace",
+        "step": "4",
+        "timestamp": "1636724488138",
+        "val_acc": "0.8496732026143791"
+    },
+    {
+        "rev": "workspace",
+        "step": "5",
+        "timestamp": "1636724544553",
+        "val_acc": "0.8496732026143791"
+    },
+    {
+        "rev": "workspace",
+        "step": "6",
+        "timestamp": "1636724600831",
+        "val_acc": "0.8104575163398693"
+    }
+]
+    },
+    "title": "",
+    "width": 300,
+    "height": 300,
+    "mark": {
+        "type": "line"
+    },
+    "encoding": {
+        "x": {
+            "field": "step",
+            "type": "quantitative",
+            "title": "step"
+        },
+        "y": {
+            "field": "val_acc",
+            "type": "quantitative",
+            "title": "val_acc",
+            "scale": {
+                "zero": false
+            }
+        },
+        "color": {
+            "field": "rev",
+            "type": "nominal"
+        }
+    }
+}
+;
+    vegaEmbed('#plot4', spec);
+</script>
+</body>
+</html>
